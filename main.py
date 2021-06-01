@@ -1,14 +1,15 @@
 import discord
+from discord.ext import commands
 import requests
 import os
 import json
 #import pynacl
 #import dnspython
 import server
-from discord.ext import commands
 updatefunc = False
 bot = commands.Bot(command_prefix='~')
 client = discord.Client()
+
 @bot.event
 async def on_ready():
     print(f"Logged in as {bot.user.name}({bot.user.id})")
